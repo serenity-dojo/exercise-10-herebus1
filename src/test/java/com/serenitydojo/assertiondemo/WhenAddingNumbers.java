@@ -1,8 +1,6 @@
 package com.serenitydojo.assertiondemo;
 
-import org.assertj.core.api.Assertions;
-import org.assertj.core.data.Percentage;
-import org.junit.Assert;
+
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -22,7 +20,7 @@ public class WhenAddingNumbers {
 
         //Assert.assertEquals(5, sum);
         //assertThat(sum).isEqualTo(4);
-        assertThat(sum).isCloseTo(5, withPercentage(10));
+        assertThat(sum).isCloseTo(4, withPercentage(10));
     }
 
     @Test
